@@ -97,6 +97,24 @@ Skipping the CSV header row (Note: A mapping is required if this is done):
 		];
 	}
 
+Get clean unit from string between two character (Note: $first_character and $last_character must be set):
+
+	public function __construct()
+	{
+		$this->table = 'users';
+		$this->csv_delimiter = '|';
+		$this->filename = base_path().'/database/seeds/csvs/your_csv.csv';
+		$this->offset_rows = 1;
+		$this->mapping = [
+		    0 => 'first_name',
+		    1 => 'last_name',
+		    2 => 'password',
+		];
+		$this->first_character = '"';
+		$this->last_character = '"';
+		// ex. "Test text" => Test text
+	}
+
 ### License
 
 CsvSeeder is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
