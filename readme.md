@@ -8,9 +8,9 @@ This package allows CSV based seeds.
 
 ### Installation
 
-Require this package in your composer.json and run composer update (or run `composer require flynsarmy/csv-seeder:1.*` directly):
+Require this package in your composer.json and run composer update (or run `composer require djkiko20/laravel-csv-seeder:1.*` directly):
 
-    "flynsarmy/csv-seeder": "1.0.*"
+    "djkiko20/laravel-csv-seeder": "1.0.*"
 
 
 ### Usage
